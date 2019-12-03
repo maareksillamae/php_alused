@@ -3,6 +3,8 @@
 //Koosta kood, mis tervitab sind vastavalt ajale. N: 8:00+ “Tere hommikust!”, 13:00+ “Tere päevast!” ja 17:00+ “Tere õhtust!”
 $hour = date('H', time());
 
+echo 'aaa'.$hour;
+
 if( $hour > 8 && $hour <= 13) {
     echo "Tere hommikust!";
 }
