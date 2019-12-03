@@ -1,3 +1,17 @@
+
+
+<html>
+<head>
+    <title> PHP code to get textbox value and print it in Uppercase </title>
+</head>
+<body>
+<form action="">
+    <input type="text" id="text" type="text" name="text" maxlength="10" size="26">
+
+    <input type="submit" name="submit" formmethod="POST">
+</form>
+
+
 <?php
 function badWords($text)
 {
