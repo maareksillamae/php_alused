@@ -1,6 +1,6 @@
 <?php
 $currentDir = getcwd();
-$uploadDirectory = "/uploads/";
+$uploadDirectory = "C:\wamp\tmp\php2119.tmp";
 
 $errors = []; // Store all foreseen and unforseen errors here
 
@@ -25,6 +25,7 @@ if (isset($_POST['submit'])) {
 
         if ($didUpload) {
             echo "The file " . basename($fileName) . " has been uploaded";
+
         } else {
             echo "An error occurred somewhere. Try again or contact the admin";
         }
