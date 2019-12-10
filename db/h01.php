@@ -5,5 +5,3 @@ require_once 'db_fnc.php';
 
 $ikt=connection(HOSTNAME,USERNAME,PASSWORD, DBNAME);
 
-echo '<pre>';
-print_r($ikt);
