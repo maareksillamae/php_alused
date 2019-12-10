@@ -25,7 +25,24 @@
 </body>
 </html>
 
+<?php
+if(isset($_POST['submit'])){
+    if(isset($_POST['answer']) && $_POST['answer'] == 4){
 
+        echo "The number is correct.";
+#Right answer was given continue with submitting form
+    }else{
+
+        echo "Sorry, try again.";
+#The wrong answer was given give an error message.
+    }
+}
+?>
+
+<form action="" method="post">
+    <input type="text" name="answer" id="answer"  placeholder="2+2=?">
+    <input type="submit" name="submit" value="Submit" />
+</form>
 
 <?php echo file_get_contents("html/header.html"); ?>
 This is page 1, the home page.
