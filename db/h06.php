@@ -16,4 +16,4 @@ if(!empty($_GET['kustutaID'])){
 $sql = 'SELECT * FROM kliendid';
 $result = getData($sql, $ikt);
 // väljastame andmed
-table06($result, array('Eesnimi', 'Perenimi', 'Kontakt', ''));
+table01($result, array('Eesnimi', 'Perenimi', 'Kontakt', ''));
